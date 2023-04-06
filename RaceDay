@@ -1,0 +1,22 @@
+// create variable for racenumber
+let raceNumber = Math.floor(Math.random() * 1000);
+// create constat for early registrats
+const registeredEarly = true ;
+// createconstat for adults
+const age = 18 ;
+// add 1000 to the racenumber if conditions are true
+if ( age > 18 && registeredEarly === true )
+{raceNumber = raceNumber + 1000 } ;
+// create condition for early adults
+if(age > 18 && registeredEarly === true)
+{console.log (`Race at 9:30 am ,Race Number :${raceNumber}`);} 
+// create condition for late adults
+else if ( age > 18 && !registeredEarly )
+{console.log (`Race at 11 am,Race Number :${raceNumber}`);}
+// create conditon for persons under 18
+else if (age < 18)
+{console.log(`Race at 12:30 pm,Race Number:${raceNumber}`);}
+// runners that are exactly 18
+else 
+{console.log('Please see the registration desk')}
+;
